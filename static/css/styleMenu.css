@@ -1,0 +1,136 @@
+:root{
+    --bg-color:#181419;
+    --primary-color:#9f36486b;
+    --secondary-color:#ffc098;
+    --third-color:#db4648;
+    --third-bis-color:#db4648f2;
+    --bg-input-color:#4f31572c;
+    --txt-color:orange;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Eagle Lake", serif;
+    color: var(--txt-color);
+}
+
+body{
+    background-color: var(--bg-color); 
+}
+
+/* -- Desde acá es propio de la página Menu -- */
+
+section{
+    position: relative;
+    top: 175px;
+    margin: 0 auto;
+    width: 80%;
+    gap: 10px;
+}
+
+.products{
+    font-size: 2.0cap;
+    text-align: center;
+}
+
+.list-products{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 25%);
+    width: 100%;
+    gap: 10px;
+    padding: 10px;
+    place-content: center;
+    margin: 0  auto;
+}
+
+.pizza{
+    background-color: var(--primary-color);
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 0 auto;   
+}
+
+.grid-item{
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+}
+
+.title-product{
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    font-size: 20px;
+}
+
+.ingredients{
+    font-size:15px;
+    align-self: center;
+}
+
+.image-pizza img{
+    width: 100px;
+    border-radius: 10px;
+    align-self: center;
+ }
+ 
+ .cost{
+    grid-column: 1 / span 2;
+    grid-row: 3;
+    font-size: 15px;
+}
+/* -- Hasta acá es propio de la página Menu -- */
+
+/* -- Desde acá es la adaptación de la pantalla -- */
+
+@media screen and (max-width: 700px){
+    :root{
+        --txt-color:rgba(255, 0, 0, 0.90);
+        }
+    #logo{
+        font-size: 4cap;
+    }
+    .list-products{
+        grid-template-columns: auto;
+        border-radius: 20px;
+        background-color: rgba(255, 127, 127, 0.75);
+    }
+    .pizza{
+        display: grid;
+        background-color: var(--bg-color)
+    }
+    .products{
+        font-size: 1.75cap;
+    }
+    section{
+        top: 150px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    :root{
+        --txt-color:rgb(60, 255, 0, 0.5);
+        }    
+    #logo{
+        font-size: 4cap;
+    }
+    .list-products{
+        grid-template-columns: auto; 
+        border-radius: 20px;
+        background-color: rgb(60, 255, 0, 0.25);
+    }
+    .pizza{
+        display: grid;
+        background-color: var(--bg-color)
+    }
+    .products{
+        font-size: 1.75cap;
+    }
+    section{
+        top: 150px;
+    }
+}
+
+/* -- Hasta acá es la adaptación de la pantalla -- */

@@ -1,0 +1,277 @@
+:root{
+    --bg-color:#181419;
+    --primary-color:#9f36486b;
+    --secondary-color:#ffc098;
+    --third-color:#db4648;
+    --third-bis-color:#db4648f2;
+    --bg-input-color:#4f31572c;
+    --txt-color:orange;
+    }
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Eagle Lake", serif;
+}
+
+body{
+    background-color: var(--bg-color); 
+}
+
+/* --  Desde acá es el Pedí por teléfono y retirá en 15' -- */
+
+.sec-1{
+    position: relative;
+    top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.cont-2{
+    border-radius: 20px;
+    border: 3px solid white;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    gap: 5px;
+    overflow:hidden;
+}
+
+.it-1 {
+    object-fit:cover;
+    margin-top: 5px;
+    margin: 5px;
+}
+
+.it-2{
+    font-family: "Eagle Lake", serif;
+    font-size: 2cap;
+    font-style: normal;
+    text-align: left;
+    color: var(--txt-color);
+}
+
+.it-3{
+    font-family: "Sedan", serif;
+    font-weight: 200;
+    font-size: 5cap;
+    font-style: normal;
+    text-align: left;
+    color:var(--txt-color);
+    margin-right: 10px;
+}
+
+.it-4 a{
+    font-family: "Sedan", serif;
+    background-color: var(--txt-color);
+    border-radius: 20px;
+    text-align: center;
+    font-size: 1cap;
+    font-weight: bold;
+    color: var(--bg-input-colorr);
+    border: 1px solid var(--txt-color);
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.it-4 a:hover{
+    cursor: pointer;
+    color:coral;
+    border: 1px solid coral;
+}
+
+/* -- Hasta acá es el Pedí por teléfono y retirá en 15' -- */
+
+/* -- Desde acá son las 4 imagenes que se expanden con la descripción -- */
+
+.studio-item{
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    width: 10%;
+    height: 110%;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 450ms;
+    -webkit-transform-origin: center left;
+            transform-origin: center left;
+}
+
+.studio-item-img{
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid white;
+    cursor:pointer;
+    opacity: .5;
+}
+
+.studio-item-detail{
+    bottom: -100%;
+    padding: 30px;
+    max-height: 100%;
+    overflow-y: auto;
+    line-height: 15px;
+    position: absolute;
+    box-sizing: border-box;
+    transition: bottom 0.4s ease-in-out;
+}
+
+.studio-item:hover .studio-item-detail {
+    bottom: 0;
+}
+
+.studio-item-detail-title {
+    color:var(--txt-color);
+    font-family: "Eagle Lake", serif;
+    text-align: center;
+    margin: 5px 0px 0px 0px;
+    line-height: 1.2em;
+} 
+
+#banner{
+    height: 200px;
+}
+
+.studio-container{
+    justify-items: center;
+    width: 100%;
+    height:450px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+#studio-1{
+    justify-self: center;
+    align-self: center;
+    width: 15%;
+    background-color: transparent;
+}
+
+#studio-2{
+    justify-self: center;
+    align-self: center;
+    width: 15%;
+    background-color: transparent;
+}
+
+#studio-3{
+    justify-self: center;
+    align-self: center;
+    width: 15%;
+    background-color:transparent;
+}
+
+#studio-4{
+    justify-self: center;
+    align-self: center;
+    width: 15%;
+    background-color: transparent;
+}
+
+#studio-1:hover, #studio-2:hover, #studio-3:hover, #studio-4:hover {
+    width: 50%;
+    object-fit:scale-down;
+    object-position: -50px;
+}
+
+#studio-1:hover > .studio-item-img, #studio-2:hover > .studio-item-img, #studio-3:hover > .studio-item-img, #studio-4:hover > .studio-item-img{
+    width: 100%;
+    object-fit:scale-down;
+    filter:drop-shadow(10px 7px 10px orange);
+    object-position: -50px;
+    opacity: .15;
+}
+
+/* -- Hasta acá son las 4 imagenes que se expanden con la descripción -- */
+
+/* -- Desde acá son las Promociones -- */
+
+.sec-2{
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container-2{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.container-2 img{
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid white;
+    flex-grow: 1;
+}
+
+.container-2 img:hover{
+    width: 35%;
+    filter:drop-shadow(10px 7px 10px white);
+}
+
+/* -- Hasta acá son las Promociones -- */
+
+/* -- Desde acá es la adaptación de la pantalla -- */
+
+@media screen and (max-width: 700px){
+    :root{
+        --txt-color:rgba(255, 0, 0, 0.90);
+        }
+    .container-2{
+        width: 50%;
+    }
+    #studio-1, #studio-2, #studio-3, #studio-4 {
+        width: 15%;
+    }
+    #logo{
+        font-size: 4cap;
+    }
+    .it-2{
+        font-size: 1.5cap;
+        width: 25%;
+    }
+    .it-3{
+        font-size: 2.5cap;
+    }
+}
+
+@media screen and (max-width: 400px){
+    :root{
+        --txt-color:rgb(60, 255, 0, 0.5);
+        }
+    #logo{
+            font-size: 4cap;
+        }
+    .container-2{
+        width: 50%;
+    }
+    #studio-1, #studio-2, #studio-3, #studio-4 {
+        width: 15%;
+    }
+    .studio-item-detail-title {
+        line-height: 1.1em;
+    } 
+    .it-2{
+        font-size: 1cap;
+        width: 15%;
+    }
+    .it-3{
+        font-size: 2cap;
+    }
+}
+
+/* -- Hasta acá es la adaptación de la pantalla -- */

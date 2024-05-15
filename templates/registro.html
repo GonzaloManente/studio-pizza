@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="../static/css/Style.css">
+    <link rel="stylesheet" href="../static/css/StyleRegistro.css">
+    <link rel="shortcut icon" href="../static/img/favicon_1.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <div class="bar">
+                <div id="logo">
+                    Studio Pizza
+                </div>
+                <div id="nav">
+                    <ul class="nav-links">
+                        <li><a href="../index.html" class="btn-cac">Home</a></li>
+                        <li><a href="menu.html" class="btn-cac">Carta</a></li>
+                        <li><a href="Registro.html" class="btn-cac">Registro</a></li>
+                        <li><a href="nosotros.html" class="btn-cac">Nosotros</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="subtitle">
+            <h1 class="container2">
+                Registrate para obtener promociones exclusivas!
+            </h1>
+        </div>
+        
+        <div class="container"> 
+            <div class="form_container">
+                <form name="form_reg">
+                    <label for="nombre">Tu nombre:</label>
+                    <input type="text" id="nombre" name="nombre">
+                    <label id="err-nombre" class="err"></label><br>
+                    <label for="apellido">Tu apellido:</label>
+                    <input type="text" id="apellido" name="apellido">
+                    <label id="err-apellido" class="err"></label><br>
+        
+                    <div class="form-control">
+                        <label id="label-birthdate">Fecha de Nacimiento:</label>
+                        <input type="date" name="birthdate" id="birthdate" required>
+                    </div> <br>
+        
+                    <div class="form-control">
+                        <label id="label-pais">Pais:</label>
+                        <select id="pais" class="form-select">
+                        <option value="">Pais</option>
+                        <option value="AR">Argentina</option>
+                        <option value="BO">Bolivia</option>
+                        <option value="BR">Brasil</option>
+                        <option value="CH">Chile</option>
+                        <option value="CO">Colombia</option>
+                        <option value="EC">Ecuador</option>
+                        <option value="PY">Paraguay</option>
+                        <option value="PE">Peru</option>
+                        <option value="UY">Uruguay</option>
+                        <option value="VE">Venezuela</option>
+                    </select>
+                    <br>
+                    </div>
+        
+                    <label for="email">Tu mail:</label>
+                    <input type="email" id="email" name="email">
+                    <label id="err-email" class="err"></label><br>
+                    
+                    <label for="password">Elige una contraseña:</label>
+                    <input type="password" id="password" name="password">
+                    <label id="err-password" class="err"></label><br>
+                    
+                    <div>
+                        <input type="checkbox" id="terminos_condiciones" required>
+                        Acepto términos y condiciones.  
+                    </div>
+                    <div>
+                        <br>
+                    </div>  
+                    <input type="submit" id="btn-send" value="Registrarse">
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="../static/js/script.js"></script>
+    <script src="../static/js/registro.js"></script>
+    <footer>
+        <div class="foot-er">
+            <div class="container-1">
+                <div class="inst"> <a href="https://www.instagram.com/" target="_blank"> <img src="../static/img/Insta.png" alt=""> </a> </div>
+                <div class="face"> <a href="https://www.facebook.com/" target="_blank"> <img src="../static/img/Face.png" alt=""> </a> </div>
+                <div class="what"> <a href="https://www.whatsapp.com/" target="_blank"> <img src="../static/img/What.png" alt=""> </a> </div>
+                <div class="twit"> <a href="https://www.twitter.com/" target="_blank"> <img src="../static/img/Twitter.png" alt=""> </a> </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

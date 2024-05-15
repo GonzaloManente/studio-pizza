@@ -1,0 +1,126 @@
+:root{
+    --bg-color:#181419;
+    --primary-color:#9f36486b;
+    --secondary-color:#ffc098;
+    --third-color:#db4648;
+    --third-bis-color:#db4648f2;
+    --bg-input-color:#4f31572c;
+    --txt-color:orange;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Eagle Lake", serif;
+}
+
+body{
+        background-color: var(--bg-color); 
+}
+
+/* -- Desde acá es propio de la página -- */
+
+.banner {
+    position: relative;
+    text-align: center;
+    overflow: hidden; /* Oculta el desbordamiento de la imagen */
+}
+
+.banner img {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    transition: transform 0.3s ease; /* Transición suave al aplicar la transformación */
+}
+
+.banner img:hover {
+    transform: scale(1.05);
+}
+
+.banner h1 {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 5em;
+    font-family: 'Arial', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    z-index: 1; 
+    text-align:left;
+}
+
+.banner::after {
+    content: 'La verdadera pizza';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+    z-index: 1; 
+}
+
+.banner img:hover + .banner::after {
+    opacity: 1; /* Mostrar eslogan al pasar el cursor */
+}
+
+.container {
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family: "Eagle Lake", serif;
+    color: var(--txt-color);
+}
+
+h2 {
+    color: #db4648;
+    gap:10px;
+    margin-top: 25px;
+}
+
+ul{
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
+p{
+    margin-top: 5px;
+}
+
+.map {
+    width: 100%;
+    -webkit-filter: grayscale(100%);
+       -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+         -o-filter: grayscale(100%);
+            filter: grayscale(100%);
+}
+
+/* -- Hasta acá es propio de la página -- */
+
+/* -- Desde acá es la adaptación de la pantalla -- */
+
+@media screen and (max-width: 700px){
+    :root{
+        --txt-color:rgba(255, 0, 0, 0.90);
+        }
+    #logo{
+        font-size: 4cap;
+    }
+}
+
+@media screen and (max-width: 400px){
+    :root{
+        --txt-color:rgb(60, 255, 0, 0.5);
+        }    
+    #logo{
+        font-size: 4cap;
+    }
+}
+
+/* -- Hasta acá es la adaptación de la pantalla -- */

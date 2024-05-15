@@ -1,0 +1,159 @@
+:root{
+    --bg-color:#181419;
+    --primary-color:#9f36486b;
+    --secondary-color:#ffc098;
+    --third-color:#db4648;
+    --third-bis-color:#db4648f2;
+    --bg-input-color:#4f31572c;
+    --txt-color:orange;
+    }
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Eagle Lake", serif;
+}
+
+body{
+    background-color: var(--bg-color); 
+}
+
+/* -- Desde acá es la barra de navegación -- */
+
+#logo {
+    font-family: "Eagle Lake", serif;
+    font-weight: 400;
+    font-size: 5cap;
+    font-style: normal;
+    text-align: center;
+  }
+
+.header{
+    background-color: transparent;
+    color: var(--txt-color);
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    transition: 0.5s linear 0.21s ;
+}
+
+.header.off{
+    transform: translateY(-300px);
+}
+
+#nav ul{
+    list-style-type: none;
+    text-align: center;
+ }
+
+ #nav li{
+    display: inline-flex;
+    flex-direction: column;
+ }
+ 
+.nav-container{
+    max-width: 100%;
+    margin: 1% 1% 0% 0%;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-cac{
+    background-color: var(--primary-color);
+    padding: 10px;
+    border-radius: 10px;
+    color:var(--txt-color);
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* -- Hasta acá es la barra de navegación -- */
+
+/* -- Desde acá son las Redes Sociales -- */
+
+.foot-er{
+    position: fixed;
+    bottom: 0px;
+    background-color:transparent;
+    display: block;
+    align-content: center;
+}
+
+.container-1{
+    width: 20%;
+    height: auto;
+    margin: 10px 40%;
+    gap: 5px;
+}
+
+.inst img{
+    width: 40px;
+    height: 40px;
+    object-fit:cover;
+    background-color: transparent;
+    border-radius: 5% 5% 5% 5%;
+    gap: 5px;
+}
+
+.face img{
+    width: 40px;
+    height: 40px;
+    object-fit:cover;
+    background-color: transparent;
+    border-radius: 5% 5% 5% 5%;
+    gap: 5px;
+}
+
+.what img{
+    width: 40px;
+    height: 40px;
+    object-fit:cover;
+    background-color: transparent;
+    border-radius: 5% 5% 5% 5%;
+    gap: 5px;
+}
+
+.twit img{
+    width: 40px;
+    height: 40px;
+    object-fit:cover;
+    background-color: transparent;
+    border-radius: 5% 5% 5% 5%;
+    gap: 5px;
+}
+
+.inst img:hover{
+    animation: tilt-n-move-shaking 0.35s infinite;
+    cursor: pointer;
+}
+
+.face img:hover{
+    animation: tilt-n-move-shaking 0.35s infinite;
+    cursor: pointer;
+}
+
+.what img:hover{
+    animation: tilt-n-move-shaking 0.35s infinite;
+    cursor: pointer;
+}
+
+.twit img:hover{
+    animation: tilt-n-move-shaking 0.35s infinite;
+    cursor: pointer;
+}
+
+@keyframes tilt-n-move-shaking {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(0, 0) rotate(25deg); }
+    50% { transform: translate(0, 0) rotate(50deg); }
+    75% { transform: translate(0, 0) rotate(25deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+/* -- Hasta acá son las Redes Sociales -- */
