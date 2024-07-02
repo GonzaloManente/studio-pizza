@@ -158,3 +158,25 @@ body{
     text-align: center;
     margin: 50px 0px 0px 0px;
 }
+
+/* -- Desde acá es la adaptación de la pantalla -- */
+
+@media screen and (max-width: 700px){
+    :root{
+        --txt-color:rgba(255, 0, 0, 0.90);
+        }
+    #logo{
+        font-size: 4cap;
+    }
+}
+
+@media screen and (max-width: 400px){
+    :root{
+        --txt-color:rgb(60, 255, 0, 0.5);
+        }    
+    #logo{
+        font-size: 4cap;
+    }
+}
+
+/* -- Hasta acá es la adaptación de la pantalla -- */
