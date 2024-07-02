@@ -25,10 +25,32 @@ body{
     font-family: 'Courier New', Courier, monospace;
 }
 
+/* -- Desde acá es el banner -- */
+
+.banner {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    object-fit: cover;
+    opacity: .3;
+}
+
+.banner img:hover {
+    transform: scale(1.05);
+}
+
 /* -- Desde acá es la página del Registro -- */
 
 .subtitle {
-    margin-top: 200px;
+    margin-top: 25px;
     text-align: center;
     font-family: "Eagle Lake", serif;
     color: var(--txt-color);
