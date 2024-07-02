@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo de Gestión</title>
+    <link rel="stylesheet" href="../static/css/Style.css">
+    <link rel="stylesheet" href="../static/css/StyleGestion.css">
+    <link rel="shortcut icon" href="../static/img/favicon_1.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f7fb471b65.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <div class="bar">
+                <div id="logo">
+                    Studio Pizza
+                </div>
+                <div id="nav">
+                    <ul class="nav-links">
+                        <li><a href="../index.html" class="btn-cac">Home</a></li>
+                        <li><a href="menu.html" class="btn-cac">Carta</a></li>
+                        <li><a href="Registro.html" class="btn-cac">Registro</a></li>
+                        <li><a href="nosotros.html" class="btn-cac">Nosotros</a></li>
+                        <li><a href="gestion.html" class="btn-cac">Gestión</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <header class="banner">
+            <img src="../static/img/BannerPizza.jpg" alt="Banner de la pizzería Studio Pizza">
+        </header>
+        <section id="form" class="container">
+            <h2 class="search-title">Gestión de las Promociones de Studio Pizza</h2>
+            <form action="#"  id="form-promo">
+                <div class="d-flex">
+                    <div class="form-control d-flex-column">
+                        <label for="nombre_promocion">Nombre</label>
+                        <input type="text" class="input-search" name="nombre_promocion" id="nombre_promocion">
+                    </div>
+                    <div class="form-control d-flex-column">
+                        <label for="detalle_pizzas">Pizzas que trae la promoción</label>
+                        <input type="text" class="input-search" name="detalle_pizzas" id="detalle_pizzas">
+                    </div>
+                    <div class="form-control d-flex-column">
+                        <label for="precio_promocion">Precio</label>
+                        <input type="number" class="input-search" name="precio_promocion" id="precio_promocion">
+                    </div>
+                    <div class="form-control d-flex-column">
+                        <label for="id_promocion" style="color:#181419">Agregar</label>
+                        <input type="hidden"  name="id" id="id_promocion">
+                        <button class="btn-cac" type="button" id="btn-save-promo">Agregar</button>
+                    </div>
+                </div>
+            </form> 
+        </section>
+        <section id="list" class="container">
+            <h2 class="list-title">Listado de las Promos Studio</h2>
+            <table id="list-table-promos" class="table">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Detalle pizzas</th>
+                        <th>Precio</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody-table-promos">
+                    
+                </tbody>
+            </table>
+        </section> 
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../static/js/script.js"></script>
+    <script src="../static/js/gestion.js"></script>
+    <footer>
+        <div class="foot-er">
+            <div class="container-1">
+                <div class="inst"> <a href="https://www.instagram.com/" target="_blank"> <img src="../static/img/Insta.png" alt=""> </a> </div>
+                <div class="face"> <a href="https://www.facebook.com/" target="_blank"> <img src="../static/img/Face.png" alt=""> </a> </div>
+                <div class="what"> <a href="https://www.whatsapp.com/" target="_blank"> <img src="../static/img/What.png" alt=""> </a> </div>
+                <div class="twit"> <a href="https://www.twitter.com/" target="_blank"> <img src="../static/img/Twitter.png" alt=""> </a> </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
